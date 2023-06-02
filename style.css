@@ -1,0 +1,77 @@
+
+*{
+    box-sizing: border-box;
+}
+
+*{
+    overflow: auto;
+}
+:root{
+    --color1: #3e3358;
+    --color2: #F4F4F4;
+    --color3: #979797;
+}
+
+.center{
+    text-align: center;
+}
+
+
+body{
+    margin: 0;
+    font-family: Arial;
+    line-height: 1.5;
+}
+/* ---------Couverture--------- */
+div.couverture{
+    height: 300px; 
+    background: url(peidatrie.jpg) center/cover no-repeat; 
+    position: relative;
+}
+/* --------contact----------*/
+div.contact{
+    border-left: 3px solid var(--color1);
+    margin: 10px;
+}
+
+div.contact p{
+    margin: 0;
+    padding-left: 10px;
+}
+div.contact p:first-child{
+    padding-bottom: 10px;
+}
+div.contact a{
+    color: var(--color1);
+}
+
+/*-------info-----------*/
+div.section-grise1{
+    height: 550px;
+    background-color: #f4f1ec;
+    position: relative;
+}
+
+div.info{
+    width: 60%;
+    display: inline-block;
+    margin-top: 100px;
+}
+p.propos{
+    width: 40%;
+    text-align: left;
+    margin-left: 50%;
+    transform: translateX(-44%);
+}
+div.profile{
+    width: 40%;
+    float: right;
+    height: 450px;
+    background-color: var(--color1);
+}
+img.tasnim{
+    height: 500px;
+    width: 460px;
+    position: absolute;
+    top: 50px;
+}
