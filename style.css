@@ -85,6 +85,7 @@ img.takwa{
 /*-------section-blanche--------*/
 div.section-blanche{
     position: relative;
+    height: 700px;
 }
 div.activity{
     background-color: var(--color1);
