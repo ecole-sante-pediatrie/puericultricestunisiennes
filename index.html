@@ -9,23 +9,125 @@
 </head>
 <body>
     <div class="couverture">
-        <div class="contact">
+        <!--
+            <div class="contact">
             <p><a href="#">weslati.tasnim@gmail.com</a></p>
             <p><a href="#">+216 92 858 119</a></p>
         </div>
+        -->
+        
     </div>
     <div class="section-grise1">
-       <div class="info center">
+        <!--Tasnim-->
+       <div class="info-tasnim center">
             <h1>Tasnim Weslati</h1>
-            <p class="propos"><b>Pediatrie</b></p>
-            <p class="propos">Tasnim weslati est ...........</p>
+            <p class="propos"><b>Puéricultrice</b></p>
+            <p class="propos">Tasnim weslati 21 ans, puéricultrice de l'Ecole Supérieure des Sciences et Techniques de la
+                Santé de Tunis </p>
        </div>
-       <div class="profile">
-            <img class="tasnim" src="doctor.jpeg">
+       <div class="profile-tasnim">
+            <img class="tasnim" src="profile2.jpg">
        </div>
+       <!--Takwa-->
+        <div class="info-takwa ">
+            <h1>Takwa Ayari</h1>
+            <p class="propos"><b>Puéricultrice</b></p>
+            <p class="propos">Takwa ayari 21 ans, puéricultrice de l'Ecole Supérieure des Sciences et Techniques de la
+                Santé de Tunis</p>
+        </div>
+        <div class="profile-takwa">
+            <img class="takwa" src="profile1.jpg">
+        </div>
     </div>
-    <div class="section-blanche1 center">
-        <embed src="HR_Interview.pdf" width=700 height=800 type='application/pdf'/>
+   
+    <div class="section-blanche">
+         <!--activity-->
+        <div class="activity">
+            <img class="act" id="zap">
+        </div>
+        <div class="inf-activity">
+            <p>
+                Dans les maternités, la puéricultrice est chargée de prendre soin
+                 des nouveau-nés en veillant à leur santé. Dans le cadre de ses fonctions, 
+                elle collaborera régulièrement avec un pédiatre et une sage-femme. 
+                Elle réalise le premier examen des bébés, établit leur régime alimentaire
+                 et assure aussi leur toilette. Elle apporte aussi conseille aux jeunes 
+                 mamans sur les soins, l’allaitement, le développement physique 
+                 et émotionnel de l’enfant. Dans les services pédiatriques des 
+                 hôpitaux, la puéricultrice alterne entre les soins aux enfants 
+                 malades et les relations avec les familles. Elle fait des pansements, 
+                 pose des perfusions, distribue des médicaments, donne conseil et suit 
+                 de très près la réalisation du traitement.
+                <br><br>
+                Dans les crèches et dans les centres de protection maternelle 
+                et infantile (PMI), la puéricultrice joue un rôle de prévention, 
+                de protection et d’éducation auprès des familles. Elle va conseiller 
+                les parents et va assurer le suivi à domicile des enfants. Elle devra 
+                être présente aux diverses consultations qui auront lieux dans les centres 
+                spécialisés. La puéricultrice travaille la grande majorité du temps au sein 
+                d’une équipe de personnels soignants et d’éducateurs de jeunes enfants. 
+                Elle peut aussi être amenée à collaborer avec des travailleurs sociaux. 
+                <br><br>
+                À l’hôpital, la puéricultrice doit parfois travailler de nuit, et aussi 
+                pendant le week-end. Ainsi, les horaires de travail peuvent être contraignantes. 
+                Étant très souvent en déplacement et ayant une importante charge de travail, 
+                la puéricultrice a besoin d'une bonne santé physique, de patience et doit avoir 
+                un sens des responsabilités si cette dernière veut pouvoir exercer ce métier. 
+                Dans la profession, la grande majorité sont des femmes, mais bien évidemment 
+                rien n’interdit à un homme d’être puériculteur.
+            </p>
+        </div>
+        
     </div>
+    <div class="section-grise2">
+        
+        <embed src="guide.pdf"  type='application/pdf'/>
+    </div>
+    <div class="contact">
+        <div class="contact-details">
+            <h1>Détails Du Contact</h1>
+            <h3>Téléphone</h3>
+            <p><a href="tel:+21692858119">+216 92 858 119</a></p>
+            <p><a href="tel:+21629339755">+216 29339755</a></p>
+
+            <h3>Email</h3>
+            <p><a href="mailto:tasnimwesleti12@gmail.com" target="_blank">tasnimwesleti12@gmail.com</a></p>
+            <p><a href="mailto:takwaayari20@gmail.com" target="_blank">takwaayari20@gmail.com</a></p>
+
+        </div>
+        
+        <img src="doctors.jpg">
+    </div>
+    </div>
+    
+
+    <script>
+        let pic = document.getElementById("zap")
+       
+        repeat_zapper()
+        //document.getElementById("xx").innerHTML = zapper()
+        function repeat_zapper(){
+            pic.setAttribute("src","act7.jpg")
+            const pictures =[
+                "act0.jpg","act1.jpg","act2.jpg","act3.jpg","act4.jpg",
+                "act5.jpg","act6.jpg","act7.jpg",
+            ]
+            let timing = setInterval(zapper, 3000)
+            let i =0
+            function zapper(){
+                if (i ==pictures.length){
+                    clearInterval(timing)
+                    return repeat_zapper()
+                }
+                else{
+                    pic.setAttribute("src",pictures[i])
+                    i++
+                }
+        }
+        }
+            
+        
+        //console.log();
+    </script>
 </body>
 </html>
